@@ -49,3 +49,6 @@
     command: cp {{ netdata_install_dir }}/system/netdata-lsb /etc/init.d/netdata
     when: clone_or_pull.changed == True and ansible_service_mgr == "init"
     notify: start and enable service
+
+  - name: Copy config files
+    copy: src=netdata.conf dest=/etc/netdata/netdata.conf
