@@ -1,0 +1,13 @@
+---
+netdata_binary: /sbin/netdata
+netdata_deps:
+  - zlib-devel
+  - libuuid-devel
+  - libmnl-devel
+  - gcc
+  - make
+  - git
+  - autoconf
+  - autogen
+  - automake
+  - pkgconfig
